@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.section-content, .community_layout-section_section {
+    padding: 0 !important;
+}
+
+.col-large-size_12-of-12, .col-size_12-of-12, .community_layout-column_column-host {
+    display: block !important;
+}
