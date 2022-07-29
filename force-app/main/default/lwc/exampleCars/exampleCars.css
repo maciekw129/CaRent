@@ -7,4 +7,5 @@
     gap: 1rem 1rem;
     padding: 1rem;
     margin-top: 2rem;
+    place-items: center;
 }
