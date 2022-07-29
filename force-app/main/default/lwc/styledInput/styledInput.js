@@ -14,6 +14,12 @@ export default class StyledInput extends LightningElement {
     }
 
     handleChange(event) {
-        this.inputValue = event.target.value;
+        const data = {
+            name: event.target.name,
+            value: event.target.value
+        }
+        this.dispatchEvent(new CustomEvent('sendvalue', {
+            detail: data
+        }));
     }
 }

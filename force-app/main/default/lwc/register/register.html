@@ -8,6 +8,7 @@
                 input-placeholder="enter first name here..."
                 input-name="firstName"
                 input-type="text"
+                onsendvalue={changeValue} 
             ></c-styled-input>
             <c-styled-input
                 class="register__input"
@@ -15,6 +16,7 @@
                 input-placeholder="enter last name here..."
                 input-name="lastName"
                 input-type="text"
+                onsendvalue={changeValue}  
             ></c-styled-input>
             <c-styled-input
                 class="register__input"
@@ -22,6 +24,7 @@
                 input-placeholder="enter e-mail here..."
                 input-name="email"
                 input-type="email"
+                onsendvalue={changeValue} 
             ></c-styled-input>
             <c-styled-input
                 class="register__input"
@@ -29,6 +32,7 @@
                 input-placeholder="enter password here..."
                 input-name="password"
                 input-type="password"
+                onsendvalue={changeValue}  
             ></c-styled-input>
             <c-styled-input
                 class="register__input"
@@ -36,8 +40,9 @@
                 input-placeholder="confirm password here..."
                 input-name="confirmPassword"
                 input-type="password"
+                onsendvalue={changeValue}  
             ></c-styled-input>
-            <c-styled-button></c-styled-button>
+            <c-styled-button onclick={handleSubmit}></c-styled-button>
         </form>
     </div>
 </template>
