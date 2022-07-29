@@ -1,0 +1,33 @@
+.car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 375px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 0.5rem 0;
+}
+
+.car__title {
+    font-weight: bold;
+    font-size: 115%;
+    margin-bottom: 0.5rem;
+}
+
+.car__image {
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 200px;
+}
+
+.car__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 0.5rem;
+}

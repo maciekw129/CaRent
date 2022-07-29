@@ -1,0 +1,7 @@
+<template>
+    <div class="cars">
+        <template for:each={cars} for:item="car">
+            <c-car key={car.Id} car={car}></c-car>
+        </template>
+    </div>
+</template>

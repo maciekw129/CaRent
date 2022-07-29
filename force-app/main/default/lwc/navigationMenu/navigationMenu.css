@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: hsl(0, 0%, 93%);
+    background-color: var(--tertiary-color);
     border-radius: 50px;
     overflow: hidden;
 }
@@ -37,6 +37,6 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
-    background-color: rgb(2, 155, 197);
+    background-color: var(--secondary-color);
     transition: background-color 0.2s linear;
 }

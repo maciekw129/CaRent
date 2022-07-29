@@ -1,0 +1,15 @@
+<template>
+    <div class="information">
+        <lightning-icon
+            class="information__icon" 
+            icon-name={informationIcon} 
+            alternative-text={informationTitle} 
+            size='large' 
+            title={informationTitle}
+        ></lightning-icon>
+        <div class="information__content">
+            <h1 class="information__header">{informationTitle}</h1>
+            <p class="information__text">{informationText}</p>
+        </div>
+    </div>
+</template>

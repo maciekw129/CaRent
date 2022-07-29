@@ -1,0 +1,10 @@
+.cars {
+    width: 100%;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}

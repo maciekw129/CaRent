@@ -1,0 +1,30 @@
+.input__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input__regular {
+    width: 300px;
+}
+
+.input__small {
+    width: 250px;
+}
+
+.input {
+    border: 0.5px solid black;
+    padding: 0.5rem 0.75rem;
+    border-radius: 50px;
+}
+
+.input::placeholder {
+    font-size: 0.9rem;
+}
+
+.input:focus {
+    border-color: var(--secondary-color);
+    transition: border-color 0.2s linear;
+    outline: none;
+}
+

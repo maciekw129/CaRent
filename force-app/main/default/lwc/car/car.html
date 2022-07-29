@@ -1,0 +1,15 @@
+<template>
+    <div class="car">
+        <p class="car__title">{car.Brand__c}: {car.Model_name__c}</p>
+        <p class="car__information">{car.Car_type__c}</p>
+        <p class="car__information">{car.Number_of_seats__c} seats</p>
+        <p class="car__information" if:true={car.Air_conditioning__c}>Air conditioning</p>
+        <div class="car__image">
+            <img src={car.imageUrl__c} alt="car image"/>
+        </div>
+        <div class="car__bottom">
+            <p class="car__information">{car.Day_cost__c}$</p>
+            <c-styled-button button-text="details"></c-styled-button>
+        </div>
+    </div>
+</template>

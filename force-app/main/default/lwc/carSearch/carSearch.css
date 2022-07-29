@@ -1,0 +1,37 @@
+.search__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-image: url('https://freelancer-4ac-dev-ed.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&versionId=0687Q000003YTap&operationContext=DELIVERY&contentId=05T7Q00000E8Su3&page=0&d=/a/7Q000000CctS/eVcORhaQ1THaZ500r1z65L4ZKwq6a2wWpFkQd6fdM3c&oid=00D7Q000008MS18&dpt=null&viewId=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(0, 0%, 25%);
+    background-blend-mode: soft-light;
+}
+
+.search__header {
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.search__header--colored {
+    color: var(--primary-color);
+}
+
+.search__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.search__input {
+    margin: 0 0.5rem;
+    width: 250px;
+}

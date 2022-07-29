@@ -1,0 +1,16 @@
+.information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 3rem;
+}
+
+.information__header {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.information__icon {
+    margin-right: 0.5rem;
+}

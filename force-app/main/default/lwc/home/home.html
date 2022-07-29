@@ -1,0 +1,27 @@
+<template>
+   <div class="home">
+      <c-car-search style="width: 100%"></c-car-search>
+      <div class="home__informations">
+         <c-homepage-information
+            class="home__information"
+            information-title="Fast delivery"
+            information-icon="utility:date_time"
+            information-text="We can deliver any car in the cities in which we operate."
+         ></c-homepage-information>
+         <c-homepage-information
+            class="home__information"
+            information-title="Support 24/7"
+            information-icon="utility:help_center"
+            information-text="We have technical support available 24/7, so if there are any problems with the car, we will help."
+         ></c-homepage-information>
+         <c-homepage-information
+            class="home__information"
+            information-title="Without hidden payments"
+            information-icon="utility:money"
+            information-text="The prices on the website are final prices, there are no hidden fees."
+         ></c-homepage-information>
+      </div>
+      <c-example-cars style="width: 100%" cars={cars}></c-example-cars>
+   </div>
+</template>
+

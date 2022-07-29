@@ -1,0 +1,15 @@
+<template>
+    <div class={containerStyle}>
+        <label class="input__label" for="input">{inputLabel}</label>
+        <input
+            class="input"
+            id="input" 
+            oninput={handleChange}
+            placeholder={inputPlaceholder}
+            name={inputName}
+            type={inputType}
+            value={inputValue}
+            readonly={readonly}
+        />
+    </div>
+</template>
