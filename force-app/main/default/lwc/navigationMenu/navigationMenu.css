@@ -11,6 +11,7 @@
 
 .navigation__logo {
     height: 100%;
+    cursor: pointer;
 }
 
 .navigation__items {
@@ -19,24 +20,23 @@
     justify-content: center;
     flex-direction: row;
     height: 100%;
-    
 }
 
 .navigation__item {
-    color: black;
-    text-decoration: none;
+    color: black !important;
+    text-decoration: none !important;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     padding: 0 1.5rem;
-    transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear !important;
 }
 
-.navigation__item:hover {
-    color: black;
-    text-decoration: none;
+.navigation__item:hover  {
+    color: black !important;
+    text-decoration: none !important;
     cursor: pointer;
     background-color: var(--secondary-color);
-    transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear !important;
 }

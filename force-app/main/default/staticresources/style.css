@@ -32,5 +32,6 @@ body {
     justify-content: center;
     border: 1.5px solid hsl(0, 0%, 85%);
     border-radius: 5px;
-    padding: 5rem;
+    padding: 4rem;
+    padding-bottom: 2.5rem;
 }

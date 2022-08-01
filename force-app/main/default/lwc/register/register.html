@@ -1,6 +1,6 @@
 <template>
     <div class="register">
-        <form class="global-centered-container">
+        <form class="global-centered-container" onsubmit={handleSubmit}>
             <h2 class="register__header">Register</h2>
             <c-styled-input
                 class="register__input"
@@ -42,7 +42,8 @@
                 input-type="password"
                 onsendvalue={changeValue}  
             ></c-styled-input>
-            <c-styled-button onclick={handleSubmit}></c-styled-button>
+            <c-styled-button type="submit"></c-styled-button>
+            <p class="register__error">{error}</p>
         </form>
     </div>
 </template>

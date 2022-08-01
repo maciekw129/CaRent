@@ -1,6 +1,6 @@
 <template>
     <div class="login">
-        <form class="global-centered-container">
+        <form class="global-centered-container" onsubmit={handleSubmit}>
             <h2 class="login__header">Login</h2>
             <c-styled-input
                 class="login__input"
@@ -8,15 +8,18 @@
                 input-placeholder="enter your e-mail here..."
                 input-name="email"
                 input-type="email"
+                onsendvalue={changeValue} 
             ></c-styled-input>
             <c-styled-input
                 class="login__input"
                 input-label="Password:"
                 input-placeholder="enter your password here..."
-                input-name="email"
-                input-type="email"
+                input-name="password"
+                input-type="password"
+                onsendvalue={changeValue} 
             ></c-styled-input>
-            <c-styled-button></c-styled-button>
+            <c-styled-button type="submit"></c-styled-button>
+            <p class="login__error">{error}</p>
         </form>
     </div>
 </template>

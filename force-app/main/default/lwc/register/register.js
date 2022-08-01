@@ -3,14 +3,15 @@ import register from '@salesforce/apex/profileController.register';
 
 export default class Register extends LightningElement {
     values = {};
+    error = '';
 
     changeValue(event) {
         this.values = { ...this.values, [event.detail.name]: event.detail.value };
-        console.log(JSON.stringify(this.values));
     }
 
     handleSubmit(event) {
         event.preventDefault();
+        this.error = '';
         register({
             email: this.values.email,
             firstName: this.values.firstName,
@@ -19,6 +20,9 @@ export default class Register extends LightningElement {
         })
         .then(() => {
             this.values = {};
-        });
+        })
+        .catch(error => {
+            this.error = error.body.message;
+        })
     }
 }

@@ -15,3 +15,16 @@
 .register__input {
     margin-bottom: 1.5rem;
 }
+
+.register__error {
+    color: red;
+    margin-top: 1.5rem;
+    width: 250px;
+    text-align: center;
+}
+
+.register__error:empty::before {
+    content: '';
+    display: inline-block;
+}
+

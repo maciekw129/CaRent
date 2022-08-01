@@ -1,4 +1,5 @@
 .login {
+    position: relative;
     margin-top: 3.5rem;
     width: 100%;
     display: flex;
@@ -14,4 +15,16 @@
 
 .login__input {
     margin-bottom: 1.5rem;
+}
+
+.login__error {
+    color: red;
+    margin-top: 1.5rem;
+    width: 250px;
+    text-align: center;
+}
+
+.login__error:empty::before {
+    content: '';
+    display: inline-block;
 }

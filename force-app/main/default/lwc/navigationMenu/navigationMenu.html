@@ -1,15 +1,11 @@
 <template>
     <div class="navigation">
-        <img class="navigation__logo" src="https://freelancer-4ac-dev-ed.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0687Q000003XlJ3&operationContext=DELIVERY&contentId=05T7Q00000E6uPK&page=0&d=/a/7Q000000Ccpf/gViCy2kk5DKlASjXqP_zKcqidG4DHqIECBXOUk6YJII&oid=00D7Q000008MS18&dpt=null&viewId=" alt="Logo" />
+        <img class="navigation__logo" onclick={handleNavigate} data-value="Home" src="https://freelancer-4ac-dev-ed.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0687Q000003XlJ3&operationContext=DELIVERY&contentId=05T7Q00000E6uPK&page=0&d=/a/7Q000000Ccpf/gViCy2kk5DKlASjXqP_zKcqidG4DHqIECBXOUk6YJII&oid=00D7Q000008MS18&dpt=null&viewId=" alt="Logo" />
         <nav class="navigation__items" if:true={isGuest}>
-            <a class="navigation__item" onclick={handleNavigate} data-value="Home">Home</a>
-            <a class="navigation__item" onclick={handleNavigate} data-value="cars__c">Cars</a>
             <a class="navigation__item" onclick={handleNavigate} data-value="Login">Login</a>
             <a class="navigation__item" onclick={handleNavigate} data-value="Register">Register</a>
         </nav>
         <nav class="navigation__items" if:false={isGuest}>
-            <a class="navigation__item" onclick={handleNavigate} data-value="Home">Home</a>
-            <a class="navigation__item" onclick={handleNavigate} data-value="cars__c">Cars</a>
             <a class="navigation__item" href={logoutLink}>Logout</a>
         </nav>
     </div>
